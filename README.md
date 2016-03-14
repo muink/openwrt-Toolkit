@@ -5,7 +5,7 @@ DNSPing for OpenWrt
 ---
 
  本项目是 [DNSPing][1] 运行在 OpenWrt 上的软件包  
- 当前版本: 0.2.1-1  
+ 当前版本: 0.2.2-1  
 
 编译
 ---
