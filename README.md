@@ -22,7 +22,7 @@ DNSPing for OpenWrt
    cat .config | grep CONFIG_CCACHE
    # 如果返回结果为 "y"，则需要使用系统软件包管理器，如 yum、apt-get，安装 ccache
    # 获取 Makefile
-   git clone https://github.com/wongsyrone/openwrt-DNSPing.git package/DNSPing
+   git clone --depth 1 --branch master --single-branch https://github.com/wongsyrone/openwrt-DNSPing.git package/DNSPing
    # 选择要编译的包 Network -> DNSPing 并进行个人定制，或者保持默认
    # 这时根据提供的选项确认依赖已经被选中
    make menuconfig
@@ -44,7 +44,7 @@ DNSPing for OpenWrt
    # 进入代码树根目录
    cd openwrt
    # 获取 Makefile
-   git clone https://github.com/wongsyrone/openwrt-DNSPing.git package/DNSPing
+   git clone --depth 1 --branch master --single-branch https://github.com/wongsyrone/openwrt-DNSPing.git package/DNSPing
    # 首先选择目标平台以及设备型号
    # 接下来选择要编译的包 Network -> DNSPing 并进行个人定制，或者保持默认
    make menuconfig
