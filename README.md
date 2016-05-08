@@ -1,16 +1,16 @@
-DNSPing for OpenWrt
+DNSPing for OpenWrt/LEDE
 ===
 
 简介
 ---
 
- 本项目是 [DNSPing][1] 运行在 OpenWrt 上的软件包  
+ 本项目是 [DNSPing][1] 运行在 OpenWrt/LEDE 上的软件包  
  当前版本: 0.2.2-1  
 
 编译
 ---
 
- - 从 OpenWrt 的 [SDK][S] 编译
+ - 从 OpenWrt/LEDE 的 [SDK][S] 编译
 
    ```bash
    # 以 ar71xx 平台为例，此处文件名为示例，仅供参考，请以实际文件名为准
@@ -31,12 +31,12 @@ DNSPing for OpenWrt
    # 编译结束之后从 bin 文件夹复制本程序的 ipk 文件到设备中，使用 opkg 进行安装
    ```
 
- - 从 OpenWrt 的代码树编译
+ - 从 OpenWrt/LEDE 的代码树编译
 
- 也可将本项目文件夹命名为 `DNSPing` 直接放置于 OpenWrt 代码树的 `package` 文件夹下，之后按照编译的正常步骤进行，最后可在 bin 目录中找到编译好的软件包。下面简述编译步骤
+ 也可将本项目文件夹命名为 `DNSPing` 直接放置于 OpenWrt/LEDE 代码树的 `package` 文件夹下，之后按照编译的正常步骤进行，最后可在 bin 目录中找到编译好的软件包。下面简述编译步骤
 
    ```bash
-   # 获取OpenWrt代码树，根据需求选择稳定版（如Chaos Calmer 15.05）或开发版Trunk
+   # 获取OpenWrt/LEDE代码树，根据需求选择稳定版（如Chaos Calmer 15.05）或开发版Trunk
    # 如果是 Trunk 使用
    git clone git://git.openwrt.org/openwrt.git
    # 如果是 Chaos Calmer 15.05 稳定版使用
