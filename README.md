@@ -5,7 +5,7 @@ DNSPing for OpenWrt/LEDE
 ---
 
  本项目是 [DNSPing][1] 运行在 OpenWrt/LEDE 上的软件包  
- 当前版本: 0.2.2-1  
+ 当前版本: 0.2.3-1  
 
 编译
 ---
