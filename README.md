@@ -22,7 +22,7 @@ Toolkit for OpenWrt/LEDE
    cat .config | grep CONFIG_CCACHE
    # 如果返回结果为 "y"，则需要使用系统软件包管理器，如 yum、apt-get，安装 ccache
    # 获取 Makefile
-   git clone --depth 1 --branch master --single-branch https://github.com/wongsyrone/openwrt-DNSPing.git package/Toolkit
+   git clone --depth 1 --branch master --single-branch https://github.com/wongsyrone/openwrt-Toolkit.git package/Toolkit
    # 选择要编译的包 Network -> Toolkit 并进行个人定制，或者保持默认
    # 这时根据提供的选项确认依赖已经被选中
    make menuconfig
@@ -44,7 +44,7 @@ Toolkit for OpenWrt/LEDE
    # 进入代码树根目录
    cd openwrt
    # 获取 Makefile
-   git clone --depth 1 --branch master --single-branch https://github.com/wongsyrone/openwrt-DNSPing.git package/Toolkit
+   git clone --depth 1 --branch master --single-branch https://github.com/wongsyrone/openwrt-Toolkit.git package/Toolkit
    # 首先选择目标平台以及设备型号
    # 接下来选择要编译的包 Network -> Toolkit 并进行个人定制，或者保持默认
    make menuconfig
