@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015-2016 wongsyrone
+# Copyright (C) 2015-2017 wongsyrone
 #
 # This is free software, licensed under the GNU General Public License v3.
 # See /LICENSE for more information.
@@ -7,13 +7,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=Toolkit
-PKG_VERSION:=0.3
+PKG_VERSION:=0.3.7.0
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/chengr28/Toolkit.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=f517152144a9df75044ffc408bc31856fbbe73a7
+PKG_SOURCE_VERSION:=f998b9a008a40fd7c15ed0f19c13dac067d31db6
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 CMAKE_INSTALL:=1
 
@@ -33,7 +33,7 @@ TARGET_CFLAGS += $(FPIC)
 CMAKE_OPTIONS += \
 	-DPLATFORM_OPENWRT=ON
 
-# Note: GCC 4.6 and 4.8 don't have complete C++11 support
+# Note: GCC 4.6 and 4.8 dont have complete C++11 support
 #       Please use GCC 4.9 or higher to compile
 define Package/Toolkit
 	SECTION:=net
@@ -41,22 +41,16 @@ define Package/Toolkit
 	TITLE:=A useful and powerful toolkit (DNSPing+FileHash)
 	URL:=https://github.com/chengr28/Toolkit
 	DEPENDS:=+libstdcpp \
-		@GCC_VERSION_4_6:BROKEN
+		@GCC_VERSION_4_6:BROKEN @GCC_VERSION_4_8:BROKEN
 endef
 
 define Package/Toolkit/config
+if PACKAGE_Toolkit
+
 	config PACKAGE_Toolkit_advancedoptions
 		bool "Use advanced compile options, see Makefile for details."
 		default n
-		help
-		 Enable this option to use link-time optimization and
-		 other GCC compile flags to reduce binary size.
-
-		 Please refer to Makefile for details.
-
-		 Unless you know what you are doing, you
-		 should probably say N here.
-
+endif
 endef
 
 define Package/Toolkit/description
