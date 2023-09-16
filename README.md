@@ -5,7 +5,7 @@ Toolkit for OpenWrt/LEDE
 ---
 
  本项目是 [Toolkit][1] 运行在 OpenWrt/LEDE 上的软件包，目前包含 DNSPing 和 FileHash  
- 当前版本: 0.3.7.0-1  
+ 当前版本: 0.4.0.2-2  
 
 编译
 ---
