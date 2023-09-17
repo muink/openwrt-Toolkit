@@ -56,6 +56,6 @@ Toolkit for OpenWrt/LEDE
 
 ----------
 
-  [1]: https://github.com/chengr28/Toolkit
-  [2]: https://github.com/chengr28/Toolkit/tree/master/Documents
+  [1]: https://github.com/muink/Toolkit
+  [2]: https://github.com/muink/Toolkit/tree/master/Documents
   [S]: http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
