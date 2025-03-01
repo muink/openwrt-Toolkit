@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Copyright (C) 2023-2024 muink <https://github.com/muink>
+# Copyright (C) 2023-2025 muink <https://github.com/muink>
 # Copyright (C) 2015-2017 wongsyrone
 
 include $(TOPDIR)/rules.mk
@@ -16,8 +16,9 @@ PKG_SOURCE_URL:=https://github.com/muink/Toolkit.git
 PKG_SOURCE_VERSION:=$(PKG_UPSTREAM_GITHASH)
 #PKG_MIRROR_HASH:=skip
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_UPSTREAM_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_UPSTREAM_VERSION)
+PKG_SOURCE:=$(PKG_SOURCE_SUBDIR)-$(PKG_SOURCE_VERSION).tar.gz
+
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_SOURCE_SUBDIR)
 
 PKG_LICENSE:=GPL-2.0
